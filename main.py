@@ -12,15 +12,15 @@
 # Consulte la Licencia para conocer el idioma específico que rige los permisos y
 # limitaciones de la licencia.
 
-importar  webapp2
+import webapp2
 
 
-clase  MainPage ( webapp2 . RequestHandler ):
-    def  get ( self ):
-        yo . respuesta . encabezados [ 'Content-Type' ] =  'text / plain'
-        yo . respuesta . escribir ( '¡Hola, mundo!' )
+class MainPage(webapp2.RequestHandler):
+    def get(self):
+        self.response.headers['Content-Type'] = 'text/plain'
+        self.response.write('Hello, World!')
 
 
-aplicación  =  webapp2 . Aplicación WSGIA ([
-    ( '/' , Página principal ),
-], debug = True )
+app = webapp2.WSGIApplication([
+    ('/', MainPage),
+], debug=True)

@@ -46,6 +46,9 @@ handlers:
 - url: .*
   script: main-man.app
 
+libraries:
+- name: webapp2
+  version: latest
 
 
 

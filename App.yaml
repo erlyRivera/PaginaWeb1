@@ -28,10 +28,10 @@ runtime: python27
 api_version: 1
 threadsafe: yes
 
-#handlers:
-#- url: /favicon\.ico
-#  static_file: favicon.ico
-#  upload: favicon\.ico
+handlers:
+- url: /favicon\.ico
+  static_file: favicon.ico
+  upload: favicon\.ico
 
 handlers:
 - url: /holamundito

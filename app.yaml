@@ -1,13 +1,5 @@
 
-#tiempo de ejecución : python27
-#api_version : 1
-#seguro para subprocesos : verdadero
-
-#manipuladores :
-#- url : /.*
-#  script : main.app
-
-#####################################################
+##################################################
 
 #applicacion: sw-prueba-ocasquero
 #version: 1
@@ -21,40 +13,16 @@
 #  upload: favicon\.ico
 
 #handlers:
-#- url: /holamundito
+#- url: /helloworld
 #  script: main.app
- 
+  
 #- url: .*
-#  script: main-man.app
+#  script: main_test.app
 
 #libraries:
 #- name: webapp2
 #  version: latest
 
-##################################################
-
-applicacion: sw-prueba-ocasquero
-version: 1
-runtime: python27
-api_version: 1
-threadsafe: yes
-
-handlers:
-- url: /favicon\.ico
-  static_file: favicon.ico
-  upload: favicon\.ico
-
-handlers:
-- url: /helloworld
-  script: main.app
-  
-- url: .*
-  script: main_test.app
-
-libraries:
-- name: webapp2
-  version: latest
-
-
+runtime: python39
 
   

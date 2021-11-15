@@ -22,8 +22,8 @@
 
 #####################################################
 
-#applicacion: sw-prueba-ocasquero
-#version: 1
+applicacion: sw-prueba-ocasquero
+version: 1
 runtime: python27
 api_version: 1
 threadsafe: yes
@@ -34,15 +34,15 @@ threadsafe: yes
 #  upload: favicon\.ico
 
 handlers:
-- url: /.*
+- url: /holamundito
   script: main.app
  
-#- url: .*
-#  script: main-man.app
+- url: .*
+  script: main-man.app
 
-#libraries:
-#- name: webapp2
-#  version: latest
+libraries:
+- name: webapp2
+  version: latest
 
 
 

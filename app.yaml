@@ -48,7 +48,7 @@ handlers:
 - url: /helloworld
   script: main.app
   
-- url: /.*
+- url: .*
   script: main_test.app
 
 libraries:

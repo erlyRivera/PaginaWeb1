@@ -44,13 +44,14 @@
 #- name: webapp2
 #  version: latest
 
+##################################################
 
 runtime: python27
 api_version: 1
 threadsafe: yes
 
 handlers:
-- url: /.*
+- url: /holamundito
   script: main.app
 
 

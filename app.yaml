@@ -49,7 +49,7 @@ handlers:
   script: main.app
   
 - url: .*
-  script: main-man.app
+  script: main_test.app
 
 libraries:
 - name: webapp2

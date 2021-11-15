@@ -12,15 +12,27 @@
 # Consulte la Licencia para conocer el idioma específico que rige los permisos y
 # limitaciones de la licencia.
 
-import webapp2
+#import webapp2
 
 
-class MainPage(webapp2.RequestHandler):
-    def get(self):
-        self.response.headers['Content-Type'] = 'text/plain'
-        self.response.write('Hello, World!')
+#class MainPage(webapp2.RequestHandler):
+ #   def get(self):
+#        self.response.headers['Content-Type'] = 'text/plain'
+#        self.response.write('Hello, World!')
 
 
-app = webapp2.WSGIApplication([
-    ('/', MainPage),
-], debug=True)
+#app = webapp2.WSGIApplication([
+#    ('/', MainPage),], debug=True)
+
+from flask import Flask
+
+app = Flask(__name__)
+@app.route('/')
+
+def hello():
+    """Return a friendly HTTP greeting."""
+    return 'Hola mundo'
+
+if __name__ == '__main__':
+    app.run(host='127.0.0.1', port=8080, debug=True)
+

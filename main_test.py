@@ -12,15 +12,15 @@
 # Consulte la Licencia para conocer el idioma específico que rige los permisos y
 # limitaciones de la licencia.
 
-import webtest
+#import webtest
 
-import main
+#import main
 
 
-def test_get():
-    app = webtest.TestApp(main.app)
+#def test_get():
+#    app = webtest.TestApp(main.app)
 
-    response = app.get('/')
+#    response = app.get('/')
 
-    assert response.status_int == 200
-    assert response.body == 'Hello, World!'
+#    assert response.status_int == 200
+#    assert response.body == 'Hello, World!'

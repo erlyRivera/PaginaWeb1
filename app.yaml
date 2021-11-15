@@ -50,7 +50,7 @@ api_version: 1
 threadsafe: yes
 
 handlers:
-- url: /holamundito
+- url: /.*
   script: main.app
 
 

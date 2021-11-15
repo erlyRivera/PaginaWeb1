@@ -48,7 +48,7 @@ handlers:
 - url: /holamundito
   script: main.app
   
-- url: /.*
+- url: .*
   script: main-man.app
 
 libraries:

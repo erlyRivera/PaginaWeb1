@@ -34,7 +34,7 @@ threadsafe: yes
 #  upload: favicon\.ico
 
 handlers:
-- url: /holamundito
+- url: /.*
   script: main.app
  
 #- url: .*
